@@ -15,7 +15,7 @@ function generateFlights(count: number): Flight[] {
     return [...new Array(count)].map(() => generateFlight())
 }
 
-export function getFlights(orig: string = "", dest: string = ""): Promise<Flight[]> {
+export function getFlights(orig: string, dest: string): Promise<Flight[]> {
     const flights: Flight[] = generateFlights(10)
     return Promise.resolve(flights)
 }
