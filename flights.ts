@@ -21,6 +21,3 @@ export function getFlights(orig: string, dest: string): Promise<Flight[]> {
 }
 
 export const getEnvironment = (): string => "prod"
-
-const flights = await getFlights("", "")
-console.log(JSON.stringify(flights, null, 2))
